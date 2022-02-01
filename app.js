@@ -12,6 +12,7 @@ var usersRouter = require('./routes/users');
 
 const usersRouter_mongo = require("./routes/mongo/users");
 const productsRouter_mongo = require("./routes/mongo/products");
+const customersRouter_mongo = require("./routes/mongo/customers");
 
 var app = express();
 
@@ -30,5 +31,6 @@ app.use('/users', usersRouter);
 
 app.use("/mongo", usersRouter_mongo);
 app.use("/mongo", productsRouter_mongo);
+app.use("/mongo", customersRouter_mongo);
 
 module.exports = app;
