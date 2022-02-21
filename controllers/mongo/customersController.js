@@ -2,11 +2,9 @@ const customers = require("../../models/mongo/customers.js");
 
 exports.insert = async (req, res, next) => {
 
-    
     let data = new customers({
         c_fullname: req.body.name,
         c_tel: req.body.tel,
-       
     });
 
     data.save();
