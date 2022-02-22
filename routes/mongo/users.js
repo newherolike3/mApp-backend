@@ -1,7 +1,7 @@
-const express = require("express");
-const router = express.Router();
-const controller = require("../../controllers/mongo/usersController.js");
+const express = require("express")
+const router = express.Router()
+const controller = require("../../controllers/mongo/usersController.js")
 
-router.post("/users", controller.insert);
+router.post("/users", controller.insert)
 
-module.exports = router;
+module.exports = router
